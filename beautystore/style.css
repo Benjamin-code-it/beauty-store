@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+#hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(/image/beautystore.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-header {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 1rem 0;
+  background-color: whitesmoke;
+}
+.logo span {
+  display: block;
+}
+
+.main-header ul {
+  /* display: flex; */
+  gap: 3rem;
+  /* position: relative; */
+}
+
+.menu {
+  padding: 1px;
+  border: 2rem;
+  border-radius: 50%;
+}
+.search_bar input {
+  width: 70%;
+  height: 40%;
+  cursor: pointer;
+  border-color: rgba(0, 0, 255, 0.801);
+  padding: 10px;
+  border-radius: 10px;
+}
+.search_bar i {
+  cursor: pointer;
+  display: flex;
+  height: 40%;
+}
+.btn {
+  height: 70%;
+  width: 4%;
+  padding: 15px;
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  top: 2rem;
+}
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.menu ul li a {
+  color: rgba(224, 6, 6, 0.945); /* note i will change the color to white */
+  text-decoration: none;
+  font-size: 13px;
+}
+.menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu ul li:hover::after {
+  width: 100%;
+}
+.grantee {
+  background-color: goldenrod;
+  height: 3rem;
+  width: 100%;
+  align-items: center;
+}
+.grantee ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grantee ul li {
+  /* color: white; note i will change the color to white */
+  font-size: 13px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.categories {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+}
+.categories h2{
+  margin-top: 20px;
+  padding:  4rem;
+
+}
+.cat {
+  flex-basis: 31%;
+  margin-bottom: 30px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10%;
+}
+.cat img{
+  width: 100%;
+  display: block;
+}
+
+#menu-btn-mobile {
+  display: none;
+}
+
+.best {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px; 
+}
+.best h2{
+  margin-top: 20px;
+  padding:  0.5rem 1rem;
+
+}
+.best p{
+  margin-bottom: 20px;
+  padding: 0.5rem 1rem;
+}
+.best button{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 34px;
+  font-size: 13px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+.best button:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+.new {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.new h2{
+  margin-top: 20px;
+  padding:  0.5rem 1rem;
+
+}
+.new p{
+  margin-bottom: 20px;
+  padding: 0.5rem 1rem;
+}
+.new button{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 5px 34px;
+  font-size: 13px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+}
+.new button:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover{
+  background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%); 
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+.layer:hover h3{
+  bottom: 70%;
+  opacity: 1;
+}
+
+.icon {
+  margin-top: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  padding: 0;
+  border: 0;
+  
+}
+.icon button {
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  width: 5%;
+  padding: 0;
+  border: 0;
+}
+
+.icon button:hover{
+  background-color: green;
+}
+.icon button i:hover{
+  color: red;
+}
+
+/****************** try doing a dropdown menu  **********************/
+
+/* .moblie-menu-container{
+  height: 500px;
+  background-color: black;
+  display: block;
+  position: relative;
+  z-index: 50;
+  color: #f44336;
+
+
+}
+.moblie-menu-container ul{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+.menu{
+  color:black; */
+/* } */
+.line{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+.line p{
+  height: 50%;
+  font-weight: bolder;
+  font-stretch: 100%;
+}
+.footer{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 6px 1px 6px;
+
+}
+
+
+
+
+/********************** Responsive section ********************/
+
+@media all and (max-width: 900px) {
+  input {
+    display: none;
+  }
+  input i {
+    display: flex;
+  }
+  #allbrand,
+  #Perfumes,
+  #Service,
+  #make_up,
+  #blog,
+  #Order {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .menu ul i {
+    display: block;
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 200px;
+    /* right: -200px; */
+    text-align: center;
+    z-index: 2;
+    transition: 1s;
+  }
+  #menu-btn-mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  .moblie{
+    display: none;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .cat img {
+    /* height: 40px; */
+    margin-left: 2px;
+    margin-right: 15px;
+    /* border-radius: 50%; */
+  }
+  .log p {
+    display: none;
+  }
+}
+

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>beautystore</title>
+  </head>
+  <body>
+    <!---------------- logo  ------------------->
+
+    <section id="hero">
+      <header class="main-header">
+        <p class="logo">life & <span>fragrance</span></p>
+
+        <!---------------- navbar  ------------------->
+
+        <nav>
+          <div class="menu" id="menus">
+            <div class="search_bar">
+              <input
+                class="text"
+                type="text"
+                placeholder="what are you shopping for ?"
+              />
+              <button class="btn">
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  onclick="InputEvent"
+                  id="input-bar"
+                ></i>
+              </button>
+            </div>
+            <br />
+            <br />
+            <br />
+            <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+            <ul>
+              <li class="menu" id="allbrand">
+                <a href="">All Brands <i class="fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="menu" id="Perfumes">
+                <a href="#" onclick="scroll()"
+                  >Perfumes <i class="fa-solid fa-caret-down"></i
+                ></a>
+              </li>
+              <li class="menu" id="Service">
+                <a href="">Service <i class="fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="menu" id="Make_up">
+                <a href="">Make Up <i class="fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="menu" id="blog">
+                <a href="">Blog <i class="fa-solid fa-caret-down"></i></a>
+              </li>
+              <li class="menu" id="Order">
+                <a href=""
+                  >Order Brands <i class="fa-solid fa-caret-down"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+          </div>
+          <div class="menu" id="menu-btn-mobile">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Menu
+            <i class="fa-solid fa-caret-down" onclick="showMenu"></i>
+          </div>
+        </nav>
+
+        <!-----------try doing a menu dropdown for it to be reponsive  -->
+
+        <!-- <div class="moblie-menu-container">
+          <ul>
+            <a href="" class="menu"
+              >All Brands <i class="fa-solid fa-caret-down"></i
+            ></a>
+
+            <a href="# " class="menu" onclick="scroll()"
+              >Perfumes <i class="fa-solid fa-caret-down"></i
+            ></a>
+
+            <a href="" class="menu"
+              >Service <i class="fa-solid fa-caret-down"></i
+            ></a>
+
+            <a href="" class="menu"
+              >Make Up <i class="fa-solid fa-caret-down"></i
+            ></a>
+
+            <a href="" class="menu"
+              >Blog <i class="fa-solid fa-caret-down"></i
+            ></a>
+
+            <a href="" class="menu"
+              >Order Brands <i class="fa-solid fa-caret-down"></i
+            ></a>
+          </ul>
+        </div> -->
+
+        <!---------------- login up & sign up  ------------------->
+
+        <div class="log">
+          <button>login</button> <button>signup</button>
+          <p>My account</p>
+        </div>
+        <div>
+          <button><i class="fa-solid fa-cart-shopping"></i>cart</button>
+        </div>
+      </header>
+    </section>
+
+    <!---------------- services  ------------------->
+
+    <section class="grantee">
+      <ul>
+        <li>
+          <i class="fa-solid fa-bolt"></i>
+          worldwide Delivery
+        </li>
+        <li><i class="fa-solid fa-bolt"></i>Safe Payment Option</li>
+        <li><i class="fa-solid fa-bolt"></i>Authentic Products Only</li>
+      </ul>
+    </section>
+
+    <!---------------- brands ------------------->
+
+    <section>
+      <div class="row">
+        <div class="dior">
+          <img src="image/dior.png" alt="" />
+        </div>
+        <div class="tom">
+          <img src="/image/tomford.png" alt="" />
+        </div>
+        <div class="latt">
+          <img src="image/lattafa.png" alt="" />
+        </div>
+        <div class="yves">
+          <img src="image/yvessaint.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!---------------- categories ( N/B the image used is different from what it represents )  ------------------->
+
+    <section class="categories">
+      <h2>Shop By Categories</h2>
+      <div class="row">
+        <div class="cat">
+          <img src="image/davidoff.png" alt="" />
+        </div>
+        <div class="cat">
+          <img src="image/koloroff.png" alt="" />
+        </div>
+        <div class="cat">
+          <img src="image/creedblack.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!---------------- best selling products  ------------------->
+
+    <section class="best">
+      <h2>Best Sell</h2>
+      <p>Checkout our trending new section for the best selling brands</p>
+      <div class="row">
+        <div class="cat">
+          <img src="image/davidoff.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i> <br> <i class="fa-regular fa-comment"></i> </h3>
+          </div>
+          <p>Davidoff 900ml</p>
+          <h3>NGN 500,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/koloroff.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Koloroff 400ml</p>
+          <h3>NGN 500,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/creedblack.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Small creed 300ml</p>
+          <h3>NGN 270,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/creedblack.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Creed 900ml</p>
+          <h3>NGN 690,000</h3>
+        </div>
+      </div>
+      <button>Veiw All</button>
+    </section>
+
+    <!---------------- new arrivals (N/B for the sake of this project the images where repeated)  ------------------->
+
+    <section class="new">
+      <h2>Meet Our Newest Arrivals</h2>
+      <p>check out our latest stucks for more quality brands</p>
+
+      <div class="row">
+        <div class="cat">
+          <img src="image/davidoff.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Davidoff 900ml</p>
+          <h3>NGN 500,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/koloroff.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>koloroff 400ml</p>
+          <h3>NGN 500,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/creedblack.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Small Creed 500ml</p>
+          <h3>NGN 270,000</h3>
+        </div>
+        <div class="cat">
+          <img src="image/creedblack.png" alt="" />
+          <div class="layer">
+            <h3><i class="fa-regular fa-heart"></i><br><i class="fa-regular fa-comment"></i></h3>
+          </div>
+          <p>Creed 900ml</p>
+          <h3>NGN 690,000</h3>
+        </div>
+      </div>
+      <button>Veiw All</button>
+    </section>
+
+    <!---------------- checkout icons for product and comments  ------------------->
+
+    <section class="icon">
+      <button><i class="fa-solid fa-cart-shopping"></i></button>
+      <button><i class="fa-regular fa-comments"></i></button>
+      <button><i class="fa-regular fa-circle-check"></i></button>
+    </section>
+
+    <!---------------- footer section for contact and subscription   ------------------->
+    <div class="line"><p>&HorizontalLine;</p></div>
+    <footer class="footer">
+      <div>
+        <h3 class="logo">life & <span>fragrance</span></h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+          voluptas dolore aperiam perspiciatis asperiores ipsam,
+        </p>
+      </div>
+      <div>
+        <h3>information</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          atque animi ad.
+        </p>
+      </div>
+      <div>
+        <h3>contact</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div>
+        <input type="text" placeholder="your email" />
+        <button>subscribe</button>
+      </div>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </footer>
+    <div class="line"><p>&HorizontalLine;</p></div>
+
+    <!---------------- javascripte  ------------------->
+
+    <script>
+      var menus = document.getElementById("menus");
+
+      function showMenu() {
+        menus.style.top = "0";
+      }
+      function hideMenu() {
+        menus.style.top = "-200px";
+      }
+
+      function scroll() {
+        let about = document.getElementById("Perfumes");
+        about.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "nearest",
+        });
+      }
+    </script>
+  </body>
+</html>
